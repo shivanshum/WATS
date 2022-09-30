@@ -7,7 +7,7 @@ class HandleAlertTests(BaseCase):
         self.execute_script('window.alert("ALERT!!!");')
         self.sleep(1)  # Not needed (Lets you see the alert pop up)
         self.accept_alert()
-        self.sleep(1)  # Not needed (Lets you see the alert go away)
+        self.sleep(1)  # Not needed (Lets you see the alert go away)f
         self.execute_script('window.prompt("My Prompt","defaultText");')
         self.sleep(1)  # Not needed (Lets you see the alert pop up)
         alert = self.switch_to_alert()

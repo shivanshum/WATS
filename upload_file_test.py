@@ -14,7 +14,8 @@ class FileUploadButtonTests(BaseCase):
         dir_name = os.path.dirname(os.path.abspath(__file__))
         my_file = "screenshot.png"
         file_path = os.path.join(dir_name, "example_logs/%s" % my_file)
-        self.assert_attribute("#myFile", "value", "")
+        self.assert_attribute("#myFile", "value", "")7
+        
         self.choose_file('input[type="file"]', file_path)
         self.assert_attribute("#myFile", "value", "C:\\fakepath\\%s" % my_file)
         self.highlight('input[type="file"]')
